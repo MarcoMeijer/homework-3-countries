@@ -1,4 +1,5 @@
 import { Country } from "@/types/country";
+import { CountryForm } from "./CountryForm";
 import styles from "./page.module.css";
 
 export default async function Home() {
@@ -8,13 +9,7 @@ export default async function Home() {
 
   return (
     <main className={styles.main}>
-      <select>
-        {countryNames.map((name) => (
-          <option value={name} key={name}>
-            {name}
-          </option>
-        ))}
-      </select>
+      <CountryForm countries={countryNames} />
     </main>
   );
 }
