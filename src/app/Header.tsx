@@ -4,6 +4,8 @@ export default function Header() {
   return (
     <div>
       <Link href={"/"}>Home</Link>
+      <br />
+      <Link href={"/cat"}>Cat facts</Link>
     </div>
   );
 }
